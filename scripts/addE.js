@@ -4,10 +4,10 @@ const procesaTodo = (event) => {
     event.preventDefault();
     const datos = new FormData(event.target);
     const datosCompletos = Object.fromEntries(datos.entries());
+    postData(datosCompletos);
 }
 
-const postData = async () => {
-    const newProduct = procesaTodo();
+const postData = async (newProduct) => {
     try{
         const response = await fetch (API, {
             method: 'POST',
@@ -17,9 +17,9 @@ const postData = async () => {
         if(response.ok){
             const jsonResponse = await response.json();
 
-            const{nombre, precio, desc, tag, imgSRC} = jsonResponse;
-            window.alert(`Producto {nombre} guardado`)
-            
+            const{nombre} = jsonResponse;
+            window.alert(`Producto ${nombre} guardado`)
+            window.location.reload();
         }
 
     }catch(error){
@@ -27,5 +27,6 @@ const postData = async () => {
     }
 
 }
+document.getElementById("formProducto").addEventListener("submit", procesaTodo);
 
 
