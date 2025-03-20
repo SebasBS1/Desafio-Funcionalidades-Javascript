@@ -12,8 +12,8 @@
 
 <body class="pMisProductos">
 <!-- Navegación -->
-<header>
-    <div id="header_bar" class="row d-flex align-items-center justify-content-between w-100 position-fixed top-0 start-0 gx-0">
+<header class="sticky-top">
+    <div id="header_bar" class="row d-flex align-items-center justify-content-between w-100 top-0 start-0 gx-0">
         <div id="logo" class="col-md-2 d-flex justify-content-center"> 
             <image src="/media/logo_ph.png" alt="Logo" class="img-fluid">
         </div>
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-12 header_center d-flex justify-content-center w-100">
                     <div class="searchbar d-flex rounded-pill w-50">
-                        <input type="text" placeholder="Buscar Productos" class="text-white form-control bg-transparent border-0 text-white">
+                        <input type="text" placeholder="Buscar Productos" class="form-control bg-transparent border-0 text-white">
                         <button type="submit" class="btn btn-link">
                             <img src="/media/search.svg" alt="Buscar"></button>
                     </div>
@@ -47,12 +47,12 @@
 </header>
 
 <!-- cuerpo de la pagina -->
-<main class="pMisProductos pt-5 mt-5">
-    <div id="container" class="container py-3 mt-5">
+<main>
+    <div id="container" class="container py-3">
         <div id="header_container" class="d-flex justify-content-between align-items-center mt-3 mb-3">
             <h1><u>Mis Productos</u></h1>
             <!--Son productos temporales por lo que solo tienen valores placeholders-->
-            <button id="button" class="btn" onclick=location.href="agregarProductos.html">Agregar Producto</button>
+            <button id="button" class="btn" onclick=location.href="agregarProducto.html">Agregar Producto</button>
         </div>
         <article>
             <section class="producto d-flex flex-wrap mb-4 p-3 rounded">
