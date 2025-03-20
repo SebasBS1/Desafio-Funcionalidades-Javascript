@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style_ap.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+        <div id="header_bar" class="row d-flex align-items-center justify-content-between w-100 position-fixed top-0 start-0 gx-0">
+            <div id="logo" class="col-md-2 d-flex justify-content-center"> 
+                <image src="/media/logo_ph.png" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 header_center d-flex justify-content-center w-100">
+                        <div class="searchbar d-flex rounded-pill w-50">
+                            <input type="text" placeholder="Buscar Productos" class="text-white form-control bg-transparent border-0">
+                            <button type="submit" class="btn btn-link">
+                                <img src="/media/search.svg" alt="Buscar"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand col-12">
+                        <div class="container justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active mx-3"> <a href="#" class="nav-link text-dark"> Artistas</a> </li>
+                                <li class="nav-item active mx-3"> <a href="misProductos.html" class="nav-link text-dark text-center">Mis Productos</a></li>
+                                <li class="nav-item active mx-3"> <a href="#" class="nav-link text-dark">Promociones</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header_right col-md-2 d-flex justify-content-center">
+                <a href="#" id="Lista de Compras"><img src="/media/bag.svg" alt="Icono de Compras" class="mx-3 pt-2" width="50px"></a>
+                <a href="#" id="perfil"><img src="/media/perfil.png" alt="Icono de Perfil" class="img-fluid" style="max-width: 75px;"></a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mt-5 pt-5">
+            <h1 class="text-center mt-5 mb-3">Agregar Producto</h1>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del Producto</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Precio</label>
+                        <input type="number" class="form-control" placeholder="$0">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Descripción</label>
+                        <textarea class="form-control" rows="3" placeholder="Detalles del producto"></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label ">Agregar Etiquetas</label>
+                        <input type="text" class="form-control" placeholder="Etiqueta">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <label class="form-label">Insertar Imagen</label>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+            
+            <div class="row-auto d-flex justify-content-center gap-3 my-4">
+                <button class="btn btn-secondary">Cancelar</button>
+                <button class="btn b_custom">Crear Producto</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-3 d-flex justify-content-between align-items-center px-4">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 mb-2 mb-md-0 text-center text-md-start">
+                    <p class="mb-0">Contáctanos: +6622825673</p>
+                </div>
+                <div class="col-6 col-md-4 mb-2 mb-md-0 text-center">
+                    <p class="mb-0">Negocio@mail.com</p>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <a href="#" id="polit">Políticas de la Tienda</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
