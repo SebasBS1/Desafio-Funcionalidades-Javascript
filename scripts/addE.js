@@ -1,3 +1,20 @@
+/* 
+Desafío: Aplicaciones Funcionales Utilizando Javascript
+
+Construcción de Software y Toma de Decisiones
+
+Docente: M. C. Ing. Sasha Valdés Jiménez
+
+Equipo:
+- Sebastián Blanchet Sánchez (A00227588)
+- Jonathan Uziel Medina Rodríguez (A01255048)
+- Araceli Ruiz Sánchez (A01255302)
+
+Fecha: 21/03/2025
+
+Descripción: Funcionalidad para enviar información a la API.
+*/
+
 const API = "https://67db3dcf1fd9e43fe47408eb.mockapi.io/artistock/v1/producto";
 
 const procesaTodo = (event) => {
