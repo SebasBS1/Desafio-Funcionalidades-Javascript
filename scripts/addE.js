@@ -16,6 +16,8 @@ Descripción: Funcionalidad para enviar información a la API.
 */
 
 const API = "https://67db3dcf1fd9e43fe47408eb.mockapi.io/artistock/v1/producto";
+/*Ejemplo que marca error:
+const API = "https://error.com/fake-api";*/
 
 const procesaTodo = (event) => {
     event.preventDefault();
@@ -36,7 +38,6 @@ const postData = async (newProduct) => {
 
             const{nombre} = jsonResponse;
             window.alert(`Producto ${nombre} guardado`)
-            //window.location.reload();
             window.location.href = 'misProductos.html';
         }
 
