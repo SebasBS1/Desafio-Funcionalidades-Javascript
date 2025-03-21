@@ -36,14 +36,17 @@ const postData = async (newProduct) => {
 
             const{nombre} = jsonResponse;
             window.alert(`Producto ${nombre} guardado`)
-            window.location.reload();
+            //window.location.reload();
+            window.location.href = 'misProductos.html';
         }
 
     }catch(error){
         window.alert("Hubo un error a guardar el producto");
+        window.location.reload();
     }
 
 }
+
 document.getElementById("formProducto").addEventListener("submit", procesaTodo);
 
 
